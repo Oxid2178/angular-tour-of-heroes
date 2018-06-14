@@ -10,7 +10,7 @@ import { Hero } from '../hero';
 })
 export class HeroesComponent implements OnInit {
 
-  selectedHero: Hero;
+  //selectedHero: Hero;
   heroes: Hero[];
 
   constructor(private heroService: HeroService) {}
@@ -19,11 +19,11 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
 
-  public getHeroes(): void {
+  getHeroes(): void {
     this.heroService.getHeroes()
         .subscribe(heroes => this.heroes = heroes);
     // for comparison only without observable: this.heroes = this.heroService.getHeroes();
