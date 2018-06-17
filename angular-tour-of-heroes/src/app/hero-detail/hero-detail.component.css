@@ -4,7 +4,7 @@ body, input[text], button {
     font-family: Cambria, Georgia;
 }
 
-button.goback {
+button.goback, button.save {
     font-family: Arial;
     background-color: #eee;
     border: none;
@@ -21,7 +21,7 @@ button:disabled {
     color: #aaa;
     cursor: auto;
 }
-button.goback {
+button.goback, button.save {
     color: #888;
     margin-top: 12px;
     margin-bottom: 12px;
